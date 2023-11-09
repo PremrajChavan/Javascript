@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .cal
+        {
+           
+            border-radius: 10px; 
+            width: 250px; 
+            height: 30px;
+            font-size: 20px;
+        }
+        .h4{
+            margin-top: 300px;
+        }
+    </style>
+</head>
+<body class="bg-dark text-center">
+    <h4 class="h4 text-light"> IST</h4>
+    <div class="col-md-2 bg-warning mx-auto cal" id="Clock">1</div>
+    
+
+    <script>
+       const Clock= document.querySelector('#Clock')
+
+       setInterval(()=>{
+        date =new Date()
+        Clock.innerHTML=date.toLocaleTimeString();
+    // console.log(date);
+       },1000)
+    </script>
+</body>
+</html>

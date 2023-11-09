@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+
+    <!--onmouseover !-->
+
+    <div class="text-center mt-5">
+        <img class="border" src="close-eye.png" alt="close-eye" width="130px" onmouseover="MyCounter()">
+        </div>
+        <br>
+        <div class="text-center">
+        <h1 id="cnt">0</h1>
+        </div>
+        
+        <script>
+            let counter=0;
+            function MyCounter()
+            {
+                counter=counter+1;
+                document.getElementById("cnt").innerHTML=counter;
+            }
+        </script>
+        
+</body>
+</html>
